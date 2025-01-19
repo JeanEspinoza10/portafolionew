@@ -8,7 +8,7 @@ export const About = () => {
 
   return <>
     <section className='section-about'>
-       <img src="src\assets\photo.png" alt="photo" />
+       <img src="src/assets/photo.png" alt="photo" />
        <section className='section-about-content'>
          <h1>{about[0].greeting}</h1>
          <p>{about[0].description}</p>
