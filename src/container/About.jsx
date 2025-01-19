@@ -2,13 +2,14 @@ import React from 'react'
 import { about } from '../utils/about'
 import linkedin from '../assets/linkedin.svg'
 import github from '../assets/github.svg'
+import photo from '../assets/photo.png'
 import '../styles/about.css'
 
 export const About = () => {
 
   return <>
     <section className='section-about'>
-       <img src="src/assets/photo.png" alt="photo" />
+       <img src={photo} alt="photo" />
        <section className='section-about-content'>
          <h1>{about[0].greeting}</h1>
          <p>{about[0].description}</p>
