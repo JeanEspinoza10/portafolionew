@@ -1,3 +1,14 @@
+import javaSvg from "../assets/java.svg";
+import pythonSvg from "../assets/python.svg";
+import jsSvg from "../assets/js.svg";
+import sqlSvg from "../assets/servidor-sql.svg";
+import flaskSvg from "../assets/flask.svg";
+import reactSvg from "../assets/react.svg";
+import nodeJsSvg from "../assets/nodejs.svg";
+import djangoSvg from "../assets/django.svg";
+import expressSvg from "../assets/express.svg";
+
+
 export const education = [
     {
         "title": "Desarrollo Web JAVA",
@@ -61,47 +72,46 @@ export const hability = [
         "title": "Lenguajes",
         "values": [
             {
-                "name" : "JAVA",
-                "url": "src\\assets\\java.svg"
+                "name": "JAVA",
+                "url": javaSvg
             },
             {
-                "name" : "Python",
-                "url": "src\\assets\\python.svg"
+                "name": "Python",
+                "url": pythonSvg
             },
             {
                 "name": "JavaScript",
-                "url": "src\\assets\\js.svg"
+                "url": jsSvg
             },
             {
                 "name": "SQL",
-                "url": "src\\assets\\servidor-sql.svg"
+                "url": sqlSvg
             }
         ]
-
     },
     {
         "title": "Framework",
         "values": [
             {
-                "name" : "Flask",
-                "url": "src\\assets\\flask.svg"
+                "name": "Flask",
+                "url": flaskSvg
             },
             {
-                "name" : "REACT",
-                "url": "src\\assets\\react.svg"
+                "name": "REACT",
+                "url": reactSvg
             },
             {
-                "name" : "NODEJS",
-                "url": "src\\assets\\nodejs.svg"
+                "name": "NODEJS",
+                "url": nodeJsSvg
             },
             {
-                "name" :"Django",
-                "url": "src\\assets\\django.svg"
+                "name": "Django",
+                "url": djangoSvg
             },
             {
                 "name": "Express",
-                "url": "src\\assets\\express.svg"
+                "url": expressSvg
             }
         ]
-    }    
-]
+    }
+];

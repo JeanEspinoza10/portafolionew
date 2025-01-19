@@ -1,5 +1,6 @@
 import React from "react";
 import { proyects } from "../utils/proyects";
+import proyectsSvg from "../assets/proyects.svg";
 import "../styles/proyects.css";
 
 export const Proyects = () => {
@@ -7,7 +8,7 @@ export const Proyects = () => {
     <>
       <section id="proyects" className="section-proyects">
         <section className="section-proyects-header">
-          <img src="src\\assets\\proyects.svg" alt="photo" />
+          <img src={proyectsSvg} alt="photo" />
           <h1>Proyectos</h1>
         </section>
         <section className="section-proyects-content">

@@ -1,5 +1,5 @@
 import React from "react";
-import { education, hability } from "../utils/education";
+import {  hability } from "../utils/education";
 import "../styles/educations.css";
 
 export const Education = () => {
