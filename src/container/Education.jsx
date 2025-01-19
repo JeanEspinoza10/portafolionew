@@ -1,5 +1,6 @@
 import React from "react";
 import {  hability } from "../utils/education";
+import educationSvg from "../assets/education.svg";
 import "../styles/educations.css";
 
 export const Education = () => {
@@ -7,7 +8,7 @@ export const Education = () => {
     <>
       <section className="section-education">
         <section className="section-education-header">
-          <img src="src\\assets\\education.svg" alt="photo" />
+          <img src={educationSvg} alt="photo" />
           <h1>Habilidades</h1>
         </section>
         <section className="section-education-content">
