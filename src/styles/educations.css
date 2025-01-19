@@ -1,0 +1,125 @@
+.section-education {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:50px;
+}
+
+.section-education-header {
+    width: 50%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 20px;
+}
+
+.section-education-content{
+    width: 50%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-education-content article {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.section-education-content article  .container-header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+}
+
+.section-education-content article  .container-header h2 {
+    font-size: 1.3rem;
+    margin: 0px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: blue;
+}
+
+
+
+.section-education-content article .container-content {
+    width: 100%;
+    overflow: hidden; /* Ocultar lo que sale del contenedor */
+    position: relative;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  
+  .carousel-track {
+    display: flex;
+    flex-direction: row;
+    width: calc(200%); /* Doble del ancho del contenedor */
+    animation: scrolling 10s linear infinite; /* Animación continua */
+  }
+  
+  .group-original,
+  .group-clone {
+    width: 100%; /* Cada grupo ocupa el 100% del contenedor */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0); /* Empieza desde la posición inicial */
+    }
+    100% {
+      transform: translateX(-50%); /* Mueve todo el contenedor un 50% hacia la izquierda */
+    }
+  }
+
+
+
+  .section-education-content article .container-content img {
+    width: 60px;
+    height: 100px;
+  }
+
+
+  @media (max-width: 700px) {
+    .carousel-track {
+      display: flex;
+      flex-direction: row;
+      width: 100%; /* El carrusel ocupa el 100% del ancho del contenedor */
+      animation: none;
+    }
+    
+    .group-clone {
+      display: none;
+    }
+
+    .group-original {
+      width: 100%; /* Cada grupo ocupa el 100% del contenedor */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 10px;
+    }
+    .section-education-content article .container-content img {
+      width: 40px;
+      height: 100px;
+    }
+  }

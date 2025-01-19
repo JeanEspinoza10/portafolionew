@@ -1,0 +1,117 @@
+.section-proyects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.section-proyects-header {
+    width: 50%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 20px;
+}
+
+.section-proyects-content {
+    width: 50%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-proyects-content article {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    font-family: 'Roboto';
+
+
+}
+
+.section-proyects-content article  .left-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.section-proyects-content article  .left-container img {
+    width: 250px;
+    border-radius: 40px;
+    filter: brightness(0.7); 
+    transition: filter 0.3s ease;
+    cursor: pointer; 
+    height: 200px;
+    margin: 0px;
+}
+
+.section-proyects-content article .left-container img:hover {
+    filter: brightness(1); 
+}
+
+.section-proyects-content article .rigth-container {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.section-proyects-content article .right-container h2{
+    font-size: 1.3rem;
+    margin: 0px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: blue;
+    
+}
+
+.section-proyects-content article .right-container p{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    
+}
+
+.section-proyects-content article .right-container .tech-stack {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.section-proyects-content article .right-container .tech-stack img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 950px) {
+
+    .section-proyects-content article {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+}
