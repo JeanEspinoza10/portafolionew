@@ -1,9 +1,15 @@
 export const experiencie = [
     {
+        "title": "Desarrollador Salesforce",
+        "description" : `Encargado de desarrollar tests, consumo de servicios externos mediante clases Apex, LWC y Flows.`,
+        "company" : "NTT DATA",
+        "date" : "Noviembre 2025 - Actualidad"
+    },
+    {
         "title": "Desarrollador FullStack",
         "description" : `Optimizé múltiples componentes del frontend con React y Next.js, logrando una mejora notable en la experiencia del usuario. Además, implementé middleware en Next.js para fortalecer la seguridad en el manejo de datos y desarrollé un sistema de roles de usuario en el backend con Django, lo que permitió un control más eficiente y seguro del acceso a la información.`,
         "company" : "Olimpo Bet",
-        "date" : "Julio 2025 - Octubre 2025"
+        "date" : "Julio 2025 - Noviembre 2025"
     },
     {
         "title": "Programador TIC",
@@ -22,6 +28,7 @@ export const experiencie = [
         "description" : `Encargado de optimizar los procesos de la institución desde la perspectiva de la mesa de servicios. Uno de los procesos que más tiempo consumía era el despliegue de software. Por ello, desarrollé una aplicación que permitió automatizar este proceso, reduciendo el tiempo que cada agente de la mesa de servicios invertía en un 50%`,
         "company" : "MIGRACIONES",
         "date" : "Enero 2023 - Diciembre 2023"
-    }
+    },
+    
 
 ]
