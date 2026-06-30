@@ -1,9 +1,12 @@
 export const about = [
     {
         greeting: 'Hey, soy Jean Espinoza',
-        description: `Desarrollador de software con más de 2 años de experiencia en el sector TI,
-                    especializado en frameworks como Flask, Django, React y Odoo.
-                    Domino la puesta en producción en entornos Linux, AWS y Nginx,
-                    y siempre estoy listo para aprender y superar nuevos retos tecnológicos.`
+        description: `Desarrollador de software con más de 3 años de experiencia construyendo 
+                    aplicaciones web, APIs e integraciones empresariales. Cuento con 
+                    experiencia en Python, Django, Flask, React, Next.js, Odoo y AWS, 
+                    desarrollando soluciones escalables mediante arquitecturas basadas en 
+                    microservicios y servicios serverless. Disfruto diseñando sistemas de 
+                    alto rendimiento, automatizando procesos y aplicando buenas prácticas de 
+                    ingeniería para crear software mantenible y de calidad.` 
     }
 ];
