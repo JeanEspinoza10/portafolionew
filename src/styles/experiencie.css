@@ -1,29 +1,52 @@
 .section-experience {
     width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    scroll-margin-top: 50px;
+    padding: 30px 20px;
+}
+
+.section-experience-container {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
+    padding: 0 60px;
+
 }
 
 .section-experience-header {
-    width: 50%;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    font-size: 1.4rem;
     gap: 20px;
 }
 
+.section-experience-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+}
+
+.experience-years {
+    font-family:"Playfair Display", serif;
+    font-size:1.5rem;
+    color:#777;
+    padding-left:20px;
+    border-left:1px solid #ccc;
+}
+
+
 .section-experience-content{
-    width: 50%;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .section-experience-content article {
@@ -31,10 +54,9 @@
     height: auto;
     margin: 0px;
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 28% auto;
     justify-content: center;
     align-items: start;
-    gap: 10px;
 }
 
 
@@ -45,10 +67,10 @@
     flex-direction: column;
     gap: 0px;
     padding: 0px;
-    font-family: 'Roboto';
 }
 .section-experience-content article  .left-container h2 {
-    font-size: 1.3rem;
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
     margin: 0px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -56,8 +78,10 @@
 }
 
 .section-experience-content article  .left-container p {
-    font-size: 1rem;
-    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
     margin: 0px;
     gap: 5px;
 }
@@ -67,23 +91,21 @@
     font-weight: normal;
 }
 
-.section-experience-content article  .right-container {
+.section-experience-content article .right-container {
     width: 100%;
-    height: auto;
-    padding: 0px;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.section-experience-content article  .right-container p{
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    opacity: 0.5;
-    letter-spacing: 1px;
-    
+.section-experience-content article .right-container p {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+     white-space: pre-line;
 }
 
 @media (max-width: 700px) {

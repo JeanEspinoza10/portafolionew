@@ -1,117 +1,120 @@
-.section-proyects {
+.section-projects {
     width: 100%;
-    height: auto;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
+    justify-content: center;
+    padding: 30px 20px;
+    scroll-margin-top: 50px;
 }
 
-.section-proyects-header {
-    width: 50%;
+.section-projects-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+}
+
+.section-projects-header {
+    width: 100%;
     margin: 0px auto;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    font-size: 1.4rem;
     gap: 20px;
 }
 
-.section-proyects-content {
-    width: 50%;
+
+.section-projects-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+}
+
+.section-projects-content {
+    width: 100%;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
 }
 
-.section-proyects-content article {
+.section-projects-content article {
     width: 100%;
-    height: auto;
-    margin: 0px;
     display: grid;
-    grid-template-columns: 50% auto;
-    justify-content: center;
-    align-items: start;
-    gap: 20px;
-    font-family: 'Roboto';
-
-
-}
-
-.section-proyects-content article  .left-container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-}
-
-.section-proyects-content article  .left-container img {
-    width: 250px;
-    border-radius: 40px;
-    filter: brightness(0.7); 
-    transition: filter 0.3s ease;
-    cursor: pointer; 
-    height: 200px;
-    margin: 0px;
-}
-
-.section-proyects-content article .left-container img:hover {
-    filter: brightness(1); 
-}
-
-.section-proyects-content article .rigth-container {
-    width: 100%;
-    height: auto;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
+    grid-template-columns: 280px 1fr;
+    grid-template-areas: "image content";
+    gap: 35px;
     align-items: center;
-    font-size: 1.1rem;
 }
 
-.section-proyects-content article .right-container h2{
-    font-size: 1.3rem;
+.section-projects-content article .left-container {
+    grid-area: image;
+}
+
+.section-projects-content article .right-container {
+    grid-area: content;
+}
+
+.left-container img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.left-container img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .15);
+}
+
+.right-container h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
     margin: 0px;
     margin-bottom: 10px;
     font-weight: bold;
     color: blue;
-    
 }
 
-.section-proyects-content article .right-container p{
-    width: 100%;
-    height: auto;
+.right-container p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
     margin: 0px;
-    opacity: 0.5;
-    letter-spacing: 1px;
-    
+    gap: 5px;
 }
 
-.section-proyects-content article .right-container .tech-stack {
-    width: 100%;
-    height: auto;
+.tech-stack {
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    gap: 10px;
-}
-.section-proyects-content article .right-container .tech-stack img {
-    width: 40px;
-    height: 40px;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 10px;
 }
 
-@media (max-width: 950px) {
+.tech-stack img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    transition: transform .2s ease;
+}
 
-    .section-proyects-content article {
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 10px;
+.tech-stack img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:768px) {
+
+    .section-projects-content article {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "content"
+            "image";
+        gap: 20px;
     }
 
 }
