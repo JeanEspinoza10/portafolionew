@@ -90,7 +90,7 @@ export const hability = [
         ]
     },
     {
-        "title": "Framework",
+        "title": "Frameworks",
         "values": [
             {
                 "name": "Flask",

@@ -30,41 +30,39 @@ export const Education = () => {
               <section key={index} className="skill-category">
                 <h2>{item.title}</h2>
 
-                <Swiper
-                  modules={[Autoplay]}
-                  spaceBetween={30}
-                  slidesPerView={5}
-                  loop={true}
-                  autoplay={{
-                    delay: 0,
-                    disableOnInteraction: false,
+                <motion.div
+                  className="skills-container"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: index * 0.2,
                   }}
-                  speed={3000}
-                  breakpoints={{
-                    320: {
-                      slidesPerView: 3,
-                      spaceBetween: 15,
-                    },
-
-                    640: {
-                      slidesPerView: 4,
-                      spaceBetween: 20,
-                    },
-
-                    1024: {
-                      slidesPerView: 5,
-                      spaceBetween: 30,
-                    },
-                  }}
+                  viewport={{ once: true }}
                 >
-                  {[...item.values, ...item.values].map((skill, skillIndex) => (
-                    <SwiperSlide key={skillIndex}>
-                      <div className="skill-item">
-                        <img src={skill.url} alt={skill.name} />
-                      </div>
-                    </SwiperSlide>
+                  {item.values.map((skill, skillIndex) => (
+                    <motion.div
+                      key={skillIndex}
+                      className="skill-item"
+                      animate={{
+                        y: [0, -5, 0, 5, 0],
+                        rotate: [0, 1, 0, -1, 0],
+                      }}
+                      transition={{
+                        duration: 4,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                        delay: skillIndex * 0.2,
+                      }}
+                      whileHover={{
+                        scale: 1.2,
+                        rotate: 5,
+                      }}
+                    >
+                      <img src={skill.url} alt={skill.name} />
+                    </motion.div>
                   ))}
-                </Swiper>
+                </motion.div>
               </section>
             ))}
           </section>
