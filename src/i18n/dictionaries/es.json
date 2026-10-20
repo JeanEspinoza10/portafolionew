@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "title": "Jean Espinoza | Software Engineer",
+    "description": "Portafolio de Jean Espinoza, Software Engineer especializado en backend, APIs e integraciones con Python, Django, React, Next.js, Salesforce y AWS."
+  },
+  "nav": {
+    "label": "Principal",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "certifications": "Certificaciones",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "language": "Idioma",
+    "open": "Abrir menú",
+    "close": "Cerrar menú"
+  },
+  "hero": {
+    "photoAlt": "Foto de Jean Espinoza",
+    "role": "Software Engineer · Backend e integraciones ",
+    "titleWords": [
+      "Diseño y",
+      "construyo,",
+      "software que",
+      "resuelve"
+    ],
+    "titleAccent": "problemas reales.",
+    "bio": "Más de {years} años desarrollando con Python, Django, React, Next.js, Java y AWS. Transformo ideas y desafíos complejos en soluciones tecnológicas escalables que generan valor.",
+    "contact": "Contactar",
+    "cv": "Descargar CV"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "summary": "+{years} años · {roles} roles",
+    "current": "Actual"
+  },
+  "projects": {
+    "title": "Proyectos"
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "summary": "Formación verificable",
+    "view": "Ver certificado"
+  },
+  "stack": {
+    "title": "Stack"
+  },
+  "contact": {
+    "title": "¿Hablamos?",
+    "body": "Estoy abierto a nuevas oportunidades y proyectos donde pueda aportar soluciones tecnológicas y generar impacto real.",
+    "copy": "Copiar email",
+    "copied": "¡Copiado!",
+    "copyFailed": "No se pudo copiar, selecciónalo manualmente"
+  },
+  "blog": {
+    "title": "Blog",
+    "comingSoon": "Próximamente",
+    "intro": "Aquí publicaré notas sobre ingeniería de software: arquitectura, APIs, buenas prácticas y lo que voy aprendiendo en el camino.",
+    "back": "← Volver al inicio"
+  },
+  "dates": {
+    "present": "hoy"
+  }
+}
