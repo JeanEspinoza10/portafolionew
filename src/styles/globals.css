@@ -155,6 +155,9 @@ img {
   background-image: linear-gradient(currentColor, currentColor);
   background-repeat: no-repeat;
   background-position: 0 92%;
+  /* Estado final por defecto: si la animación no corre (capturas de vista previa,
+     "reducir movimiento"), se ve el subrayado y no un bloque de color. */
+  background-size: 100% 0.12em;
   animation: underline 0.7s var(--ease) 1.25s both;
 }
 
