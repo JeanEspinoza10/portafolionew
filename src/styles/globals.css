@@ -119,6 +119,11 @@ img {
   border-radius: var(--radius);
 }
 
+/* Sin scroll de fondo mientras hay una ventana abierta */
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

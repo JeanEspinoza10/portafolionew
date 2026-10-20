@@ -1,0 +1,135 @@
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.chip {
+  max-width: 100%;
+}
+
+.more {
+  min-height: 28px;
+  padding: 3px 10px;
+  border: 1px dashed var(--border-strong);
+  border-radius: 6px;
+  background: transparent;
+  font: 500 12px/1.4 var(--font-mono);
+  color: var(--accent);
+  cursor: pointer;
+  transition: background-color 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+
+.more:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  border-style: solid;
+}
+
+/* ---------- Ventana ---------- */
+.dialog {
+  width: min(440px, calc(100vw - 32px));
+  max-height: min(80vh, 560px);
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 24px 48px -16px rgb(24 24 27 / 0.35);
+}
+
+.dialog[open] {
+  animation: dialog-in 0.3s var(--ease);
+}
+
+.dialog::backdrop {
+  background: rgb(24 24 27 / 0.4);
+  backdrop-filter: blur(3px);
+}
+
+.dialog[open]::backdrop {
+  animation: backdrop-in 0.3s var(--ease);
+}
+
+@keyframes dialog-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes backdrop-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes chip-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+.panel {
+  padding: 24px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+}
+
+.title {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.issuer {
+  margin: 4px 0 0;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.close {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+
+.close:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 6px 12px;
+  font-size: 13px;
+  animation: chip-in 0.35s var(--ease) both;
+}

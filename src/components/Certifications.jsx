@@ -1,4 +1,6 @@
 import { certifications } from '@/data/certifications';
+import { localized } from '@/lib/format';
+import CertSkills from './CertSkills';
 import styles from './Cards.module.css';
 
 function MedalIcon() {
@@ -31,15 +33,19 @@ export default function Certifications({ locale, t }) {
             </div>
             <div>
               <h3 className={styles.title}>{cert.title[locale]}</h3>
-              <p className={styles.issuer}>{cert.issuer}</p>
+              <p className={styles.issuer}>{localized(cert.issuer, locale)}</p>
             </div>
-            <div className={styles.chips}>
-              {cert.skills.map((skill) => (
-                <span key={skill} className="chip">
-                  {skill}
-                </span>
-              ))}
-            </div>
+            <CertSkills
+              skills={localized(cert.skills, locale)}
+              title={cert.title[locale]}
+              issuer={localized(cert.issuer, locale)}
+              labels={{
+                more: t.certifications.more,
+                moreLabel: t.certifications.moreLabel,
+                skills: t.certifications.skills,
+                close: t.certifications.close,
+              }}
+            />
             <div className={styles.links}>
               <a href={cert.url} target="_blank" rel="noopener noreferrer">
                 {t.certifications.view} ↗

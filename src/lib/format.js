@@ -15,3 +15,11 @@ export function formatMonth(yearMonth, locale) {
 export function interpolate(text, values) {
   return text.replace(/\{(\w+)\}/g, (_, key) => String(values[key] ?? ''));
 }
+
+// Acepta un valor fijo ('TECSUP', ['SQL']) o uno traducido ({ es, en }).
+export function localized(value, locale) {
+  if (value && typeof value === 'object' && !Array.isArray(value)) {
+    return value[locale] ?? value.es;
+  }
+  return value;
+}

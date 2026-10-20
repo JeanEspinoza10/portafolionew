@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Jean Espinoza | Software Engineer",
-    "description": "Portfolio of Jean Espinoza, Software Engineer focused on backend, APIs and integrations with Python, Django, React, Next.js, Salesforce and AWS."
+    "description": "Portfolio of Jean Espinoza, Software Engineer focused on APIs and integrations with Python, Django, React, Next.js, JAVA, Salesforce and AWS."
   },
   "nav": {
     "label": "Main",
@@ -16,7 +16,7 @@
   },
   "hero": {
     "photoAlt": "Photo of Jean Espinoza",
-    "role": "Software Engineer · Backend & integrations",
+    "role": "Software Engineer · Integrations",
     "titleWords": [
       "I design and",
       "build software",
@@ -39,7 +39,11 @@
   "certifications": {
     "title": "Certifications",
     "summary": "Verifiable training",
-    "view": "View certificate"
+    "view": "View certificate",
+    "more": "+{count} more",
+    "moreLabel": "See all {count} skills for {title}",
+    "skills": "Skills",
+    "close": "Close"
   },
   "stack": {
     "title": "Stack"
