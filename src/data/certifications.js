@@ -4,7 +4,7 @@ export const certifications = [
   {
     title: { es: 'Arquitectura de Software', en: 'Software Architecture' },
     issuer: 'TECSUP',
-    year: 2024,
+    year: 2026,
     skills: ['POO', 'Design Patterns','Clean Architecture','Microservices','SOLID'],
     url: 'https://academico-cloud.tecsup.edu.pe/pcc/#/home/certificado?c=905921&n=PIV/26/324&t=E',
   },
