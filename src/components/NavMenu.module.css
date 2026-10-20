@@ -1,0 +1,116 @@
+.root {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------- Escritorio ---------- */
+.desktop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  font-size: 15px;
+}
+
+.desktop a {
+  color: var(--muted);
+}
+
+.desktop a:hover {
+  color: var(--accent);
+}
+
+/* ---------- Botón hamburguesa ---------- */
+.burger {
+  display: none;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.bar {
+  position: absolute;
+  left: 12px;
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--text);
+  transition: transform 0.3s var(--ease), opacity 0.2s var(--ease);
+}
+
+.bar:nth-child(1) { top: 15px; }
+.bar:nth-child(2) { top: 20px; }
+.bar:nth-child(3) { top: 25px; }
+
+/* Se transforma en X al abrir */
+.burger[aria-expanded='true'] .bar:nth-child(1) { transform: translateY(5px) rotate(45deg); }
+.burger[aria-expanded='true'] .bar:nth-child(2) { opacity: 0; transform: scaleX(0.4); }
+.burger[aria-expanded='true'] .bar:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
+
+/* ---------- Panel desplegable ---------- */
+.panel {
+  display: none;
+}
+
+.list {
+  margin: 0;
+  padding: 8px 24px 20px;
+  list-style: none;
+}
+
+.list li {
+  border-bottom: 1px solid var(--border);
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+.list a {
+  display: flex;
+  align-items: center;
+  min-height: 52px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .burger {
+    display: inline-block;
+  }
+
+  .panel {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 16px 24px -16px rgb(24 24 27 / 0.2);
+    clip-path: inset(0 0 100% 0);
+    visibility: hidden;
+    transition: clip-path 0.35s var(--ease), visibility 0s linear 0.35s;
+  }
+
+  .panel[data-open='true'] {
+    clip-path: inset(0 0 0 0);
+    visibility: visible;
+    transition: clip-path 0.35s var(--ease), visibility 0s;
+  }
+
+  .panel[data-open='true'] li {
+    opacity: 1;
+    transform: none;
+  }
+}

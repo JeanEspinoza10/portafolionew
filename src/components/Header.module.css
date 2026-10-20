@@ -1,0 +1,39 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--border);
+  background: rgb(250 250 249 / 0.85);
+  backdrop-filter: blur(10px);
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.brand {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px 28px;
+}
+
+/* En móvil: selector de idioma primero y la hamburguesa al borde derecho */
+@media (max-width: 768px) {
+  .right {
+    gap: 10px;
+  }
+
+  .menu {
+    order: 2;
+  }
+}
